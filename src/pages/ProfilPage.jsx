@@ -57,7 +57,7 @@ const ProfilPage = () => {
               <Row>
                 <div className="col-md-5">
                   <img
-                    src={profile?.image ? profile?.image : logo}
+                    src={logo}
                     style={{ height: "auto", width: "100%" }}
                     className="img-fluid rounded-1 mb-3"
                     alt="profile"
