@@ -21,7 +21,7 @@ export default function AdminComplain() {
   const [state, dispatch] = useContext(UserContext);
 
   useEffect(() => {
-    socket = io(process.env.REACT_APP_BASEURL, {
+    socket = io("https://dumbmerch1.herokuapp.com/", {
       auth: {
         token: localStorage.getItem("token"),
       },
