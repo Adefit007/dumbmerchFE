@@ -22,7 +22,7 @@ export default function Chat({ contact, user, messages, sendMessage }) {
                 >
                   {item.idSender !== user.id && (
                     <img
-                      src={contact.profile?.image || logo}
+                      src={logo}
                       className="rounded-circle me-2 img-chat"
                       alt=""
                     />
