@@ -21,7 +21,7 @@ export default function AdminComplain() {
   const [state, dispatch] = useContext(UserContext);
 
   useEffect(() => {
-    socket = io("http://localhost:5000", {
+    socket = io(process.env.REACT_APP_BASEURL, {
       auth: {
         token: localStorage.getItem("token"),
       },
