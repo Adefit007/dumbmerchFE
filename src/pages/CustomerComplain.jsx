@@ -21,7 +21,7 @@ export default function User() {
   const [state, dispatch] = useContext(UserContext);
 
   useEffect(() => {
-    socket = io("https://dumbmerch1.herokuapp.com/", {
+    socket = io("https://web-production-03c1.up.railway.app/", {
       auth: {
         token: localStorage.getItem("token"),
       },
